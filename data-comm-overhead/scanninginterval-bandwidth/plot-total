@@ -1,0 +1,19 @@
+#set title "Scanning interval and localization accuracy overview" 
+set xlabel "Scanning interval (seconds)" 
+set ylabel "Outgoing bandwidth usage for\n1000 sensor nodes (kilobytes/s)"
+
+set grid
+set boxwidth 1.2 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [32:5000]
+set logscale y 2
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'scanninginterval-bandwidth-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) title "mean", \
+	'triangulation-total.csv' using 3:xticlabels(1) title "max"
+

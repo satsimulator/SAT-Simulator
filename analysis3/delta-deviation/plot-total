@@ -1,0 +1,52 @@
+set xlabel "Delta (seconds)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:15]
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'delta-deviation-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-total.csv' using 3:xticlabels(1) title "stddev"
+
+
+reset
+
+set title "Delta and localization accuracy summary overview" 
+set xlabel "Delta (seconds)" 
+set ylabel "Tracking accuracy (meters)"
+
+
+set key outside right
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:15]
+
+set terminal pngcairo size 500,350 enhanced font 'Verdana,12'
+set output 'delta-deviation-overview.png'
+
+plot 'triangulation-CI-1-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 15", \
+        'triangulation-CI-1-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 30", \
+        'triangulation-CI-1-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 45", \
+        'triangulation-CI-15-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 15", \
+        'triangulation-CI-15-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 30", \
+        'triangulation-CI-15-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 45", \
+        'triangulation-CI-30-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 15", \
+        'triangulation-CI-30-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 30", \
+        'triangulation-CI-30-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 45", \
+        'triangulation-CI-60-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 15", \
+        'triangulation-CI-60-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 30", \
+        'triangulation-CI-60-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 45"
+
+
+

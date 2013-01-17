@@ -1,0 +1,49 @@
+#set title "Range and deviation overview" 
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:20]
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'range-deviation-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) title "mean tracking deviation", \
+	'triangulation-total.csv' using 3:xticlabels(1) title "standard deviation"
+
+
+reset
+
+set title "Range and deviation summary overview" 
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+
+set key outside right
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:25]
+
+set terminal pngcairo size 500,350 enhanced font 'Verdana,12'
+set output 'range-deviation-overview.png'
+
+plot 'triangulation-CI-1-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 D 30", \
+        'triangulation-CI-1-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 D 60", \
+        'triangulation-CI-15-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 D 30", \
+        'triangulation-CI-15-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 D 60", \
+	'triangulation-CI-30-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 D 30", \
+	'triangulation-CI-30-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 D 60", \
+	'triangulation-CI-60-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 D 30", \
+	'triangulation-CI-60-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 D 30"
+
+
+

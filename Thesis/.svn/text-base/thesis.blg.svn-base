@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: thesis.aux
+The style file: siam.bst
+Database file #1: references.bib.bib
+Warning--to sort, need author or key in UDEL
+Warning--to sort, need author or key in 80211
+Warning--empty author in UDEL
+Warning--empty journal in UDEL
+Warning--empty year in UDEL
+Warning--empty author in 80211
+Warning--empty journal in CELLPHONETRACKING
+You've used 14 entries,
+            2030 wiz_defined-function locations,
+            599 strings with 6896 characters,
+and the built_in function-call counts, 5374 in all, are:
+= -- 508
+> -- 238
+< -- 0
++ -- 96
+- -- 80
+* -- 424
+:= -- 805
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 81
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 251
+empty$ -- 423
+format.name$ -- 80
+if$ -- 1168
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 15
+newline$ -- 45
+num.names$ -- 24
+pop$ -- 90
+preamble$ -- 1
+purify$ -- 68
+quote$ -- 0
+skip$ -- 197
+stack$ -- 0
+substring$ -- 358
+swap$ -- 98
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 7
+while$ -- 52
+width$ -- 16
+write$ -- 132
+(There were 7 warnings)

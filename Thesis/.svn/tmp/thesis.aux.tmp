@@ -1,0 +1,112 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\citation{CELLPHONETRACKING}
+\citation{SAT}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}}
+\citation{SAT}
+\citation{CELLPHONETRACKING}
+\citation{ALKUWARI}
+\citation{CHENG}
+\citation{RADAR}
+\citation{MOTETRACK}
+\citation{APPLAUS}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related works}{4}{section.2}}
+\citation{MALNET}
+\citation{MAURAUDER}
+\citation{CHENG}
+\citation{WORKINGOVERTIME}
+\citation{CHENG}
+\citation{MALNET}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Sense-And-Trace Protocol}{5}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}SAT System Model}{5}{subsection.3.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textit  {Glossary of terms and acronyms used in this paper}\relax }}{6}{table.caption.3}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:glossary}{{1}{6}{\textit {Glossary of terms and acronyms used in this paper}\relax \relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}System components}{6}{subsection.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Target logging}{6}{subsection.3.3}}
+\citation{SAT}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textit  {SAT protocol overview M3 sends an encrypted location report for M2 and M4}\relax }}{7}{figure.caption.4}}
+\newlabel{fig:sat-example}{{1}{7}{\textit {SAT protocol overview M3 sends an encrypted location report for M2 and M4}\relax \relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Target tracing}{7}{subsection.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textit  {SAT communication and Agent interaction}\relax }}{7}{figure.2}}
+\newlabel{fig:sat-comm}{{2}{7}{\textit {SAT communication and Agent interaction}\relax \relax }{figure.2}{}}
+\citation{MALNET}
+\citation{UDEL}
+\citation{UDEL}
+\citation{UDEL}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Simulation Setup}{8}{section.4}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Triangulation algorithm used during our simulations.\newline  Averaging witness pairs, then average those to compute the final positioning\relax }}{9}{algorithm.1}}
+\newlabel{sat-triag}{{1}{9}{Triangulation algorithm used during our simulations.\newline Averaging witness pairs, then average those to compute the final positioning\relax \relax }{algorithm.1}{}}
+\newlabel{alg:triag}{{1}{9}{Triangulation algorithm used during our simulations.\newline Averaging witness pairs, then average those to compute the final positioning\relax \relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Simulation results}{10}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Tracking accuracy results}{10}{subsection.5.1}}
+\citation{CHENG}
+<<<<<<< .mine
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Delta variable and average tracking gaps}\relax }}{10}{figure.caption.5}}
+\newlabel{fig:delta-timegap-deviation}{{3}{10}{\textit {Delta variable and average tracking gaps}\relax \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textit  {Range variable and tracking accuracy}\relax }}{10}{figure.caption.5}}
+\newlabel{fig:range-deviation}{{4}{10}{\textit {Range variable and tracking accuracy}\relax \relax }{figure.caption.5}{}}
+=======
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Delta variable and average tracking gaps}\relax }}{11}{figure.caption.5}}
+\newlabel{fig:delta-timegap-deviation}{{3}{11}{\textit {Delta variable and average tracking gaps}\relax \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textit  {Range variable and tracking accuracy}\relax }}{11}{figure.caption.5}}
+\newlabel{fig:range-deviation}{{4}{11}{\textit {Range variable and tracking accuracy}\relax \relax }{figure.caption.5}{}}
+>>>>>>> .r2476
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textit  {ScanningInterval variable and average tracking gaps}\relax }}{11}{figure.caption.6}}
+\newlabel{fig:scanninginterval-timegap}{{5}{11}{\textit {ScanningInterval variable and average tracking gaps}\relax \relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textit  {24 hour tracking accuracy overview using ScanningInterval 15 Range 30 as configuration}\relax }}{11}{figure.caption.6}}
+\newlabel{fig:24h-detail-view}{{6}{11}{\textit {24 hour tracking accuracy overview using ScanningInterval 15 Range 30 as configuration}\relax \relax }{figure.caption.6}{}}
+<<<<<<< .mine
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Communication overhead}{11}{subsection.5.2}}
+=======
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Bandwidth requirement results}{11}{subsection.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textit  {Bandwidth usage in kilobytes per second and scanning interval. The data shown is for 1000 sensor nodes. Note: the Y-Axis uses log scaling.}\relax }}{12}{figure.caption.7}}
+\newlabel{fig:bandwidth-view}{{7}{12}{\textit {Bandwidth usage in kilobytes per second and scanning interval. The data shown is for 1000 sensor nodes.\\Note: the Y-Axis uses log scaling.}\relax \relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textit  {24 hour bandwidth overview using Delta 60 ScanningInterval 15 Range 30 as configuration. The daily commute is visible, busiest time between 8 am and 4 pm}\relax }}{12}{figure.caption.7}}
+\newlabel{fig:24h-bandwidth-view}{{8}{12}{\textit {24 hour bandwidth overview using Delta 60 ScanningInterval 15 Range 30 as configuration. The daily commute is visible, busiest time between 8 am and 4 pm}\relax \relax }{figure.caption.7}{}}
+>>>>>>> .r2476
+\citation{GREENSTEIN}
+\citation{GRUTESER}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textit  {Bandwidth usage in kilobytes per second and scanning interval. The data shown is for 1000 sensor nodes. Note: the Y-Axis uses log scaling.}\relax }}{12}{figure.caption.7}}
+\newlabel{fig:bandwidth-view}{{7}{12}{\textit {Bandwidth usage in kilobytes per second and scanning interval. The data shown is for 1000 sensor nodes.\\Note: the Y-Axis uses log scaling.}\relax \relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textit  {24 hour bandwidth overview using Delta 60 ScanningInterval 15 Range 30 as configuration. The daily commute is visible, busiest time between 8 am and 4 pm}\relax }}{12}{figure.caption.7}}
+\newlabel{fig:24h-bandwidth-view}{{8}{12}{\textit {24 hour bandwidth overview using Delta 60 ScanningInterval 15 Range 30 as configuration. The daily commute is visible, busiest time between 8 am and 4 pm}\relax \relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Feasibility \& open problems}{12}{section.6}}
+\citation{SAT}
+\citation{80211}
+\citation{SAT}
+\citation{MALNET}
+<<<<<<< .mine
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{14}{section.7}}
+=======
+\@writefile{toc}{\contentsline {section}{\numberline {6}Feasibility \& open problems}{13}{section.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{14}{section.7}}
+>>>>>>> .r2476
+\bibstyle{siam}
+\bibdata{references.bib}
+\bibcite{UDEL}{{1}{}{{}}{{}}}
+\bibcite{80211}{{2}{}{{}}{{}}}
+\bibcite{ALKUWARI}{{3}{}{{}}{{}}}
+\bibcite{RADAR}{{4}{}{{}}{{}}}
+\bibcite{SAT}{{5}{}{{}}{{}}}
+\bibcite{CELLPHONETRACKING}{{6}{}{{}}{{}}}
+\bibcite{CHENG}{{7}{}{{}}{{}}}
+\bibcite{MAURAUDER}{{8}{}{{}}{{}}}
+\bibcite{GREENSTEIN}{{9}{}{{}}{{}}}
+\bibcite{GRUTESER}{{10}{}{{}}{{}}}
+\bibcite{MALNET}{{11}{}{{}}{{}}}
+\bibcite{WORKINGOVERTIME}{{12}{}{{}}{{}}}
+\bibcite{MOTETRACK}{{13}{}{{}}{{}}}
+\bibcite{APPLAUS}{{14}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers

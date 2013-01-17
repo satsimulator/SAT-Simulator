@@ -1,0 +1,20 @@
+set xlabel "Time of Day (hours)" 
+set ylabel "Outgoing bandwidth (kilobytes/s)\nFor 1000 scanning nodes"
+set title sprintf("CheckInterval 15 Range 30 Delta 60")
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set bars small
+set yrange [100:350]
+set xtics ("2" 7200, "4" 14400, "6" 21600, "8" 28800, "10" 36000, "12" 43200, "14" 50400, "16" 57600, "18" 64800, "20" 72000, "22" 79200, "24" 86400)
+
+set terminal pdfcairo size 8cm,5.6cm
+set output '24-bandwidth-view.pdf'
+
+plot "aggr-data.csv" w yerrorlines t 'min & max', \
+	"aggr-data.csv" w lines lc rgb "blue" lw 4 title 'mean';
+
+#plot "aggr-data.csv" w yerrorlines t 'min & max';

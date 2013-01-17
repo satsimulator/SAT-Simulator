@@ -1,0 +1,116 @@
+
+
+set title sprintf("Range 15 Delta 30\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D30-R15.png'
+
+plot 'triangulation-D30-R15-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset
+
+set title sprintf("Range 30 Delta 30\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D30-R30.png'
+
+plot 'triangulation-D30-R30-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset
+
+set title sprintf("Range 45 Delta 30\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D30-R45.png'
+
+plot 'triangulation-D30-R45-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset
+
+set title sprintf("Range 15 Delta 60\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D60-R15.png'
+
+plot 'triangulation-D60-R15-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset
+
+
+set title sprintf("Range 30 Delta 60\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D60-R30.png'
+
+plot 'triangulation-D60-R30-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset
+
+set title sprintf("Range 45 Delta 60\n Check interval and timegap")
+set xlabel "Check Interval (seconds)"
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-D60-R45.png'
+
+plot 'triangulation-D60-R45-PCT10-summary.csv' using 2:xticlabels(1) title "average"
+
+
+reset

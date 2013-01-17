@@ -1,0 +1,11 @@
+graph update. deleted plot files to overcome subversion bug
+
+
+--This line, and those below, will be ignored--
+
+M    range-timegap/triangulation-CI-30-D60.png
+M    range-timegap/triangulation-CI-60-D30.png
+M    range-timegap/range-timegap-overview.png
+M    range-timegap/range-timegap-total.png
+D    range-timegap/plot-rest
+D    range-timegap/plot-total

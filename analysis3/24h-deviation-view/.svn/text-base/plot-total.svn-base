@@ -1,0 +1,18 @@
+set xlabel "Time of Day (hours)" 
+set ylabel "Tracking deviation (meters)"
+set title sprintf("CheckInterval 15 Range 30")
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set bars small
+set yrange [0:28]
+set xtics ("2" 7200, "4" 14400, "6" 21600, "8" 28800, "10" 36000, "12" 43200, "14" 50400, "16" 57600, "18" 64800, "20" 72000, "22" 79200, "24" 86400)
+
+set terminal pdfcairo size 8cm,5.6cm
+set output '24-deviation-view.pdf'
+
+plot "aggr-data.csv" w yerr t 'standard deviation', \
+	"aggr-data.csv" w lines lc rgb "blue" lw 4 title 'mean';

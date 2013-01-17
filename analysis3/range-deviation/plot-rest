@@ -1,0 +1,176 @@
+
+set title sprintf("CheckInterval 1 Delta 30\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-1-D30.png'
+
+plot 'triangulation-CI-1-D30-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-1-D30-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+
+reset
+
+set title sprintf("CheckInterval 1 Delta 60\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-1-D60.png'
+
+plot 'triangulation-CI-1-D60-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-1-D60-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+reset
+
+
+set title sprintf("CheckInterval 15 Delta 30\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-15-D30.png'
+
+plot 'triangulation-CI-15-D30-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-15-D30-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+reset
+
+
+set title sprintf("CheckInterval 15 Delta 60\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-15-D60.png'
+
+plot 'triangulation-CI-15-D60-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-15-D60-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+
+reset
+
+
+set title sprintf("CheckInterval 30 Delta 30\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-30-D30.png'
+
+plot 'triangulation-CI-30-D30-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-30-D30-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+
+
+
+reset
+
+
+set title sprintf("CheckInterval 30 Delta 60\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-30-D60.png'
+
+plot 'triangulation-CI-30-D60-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-30-D60-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+
+
+
+
+reset
+
+
+set title sprintf("CheckInterval 60 Delta 30\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-60-D30.png'
+
+plot 'triangulation-CI-60-D30-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-60-D30-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"
+
+
+
+
+reset
+
+
+set title sprintf("CheckInterval 60 Delta 60\n Localization accuracy and Range")
+set xlabel "Range (meters)" 
+set ylabel "Tracking accuracy (meters)"
+
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+#set yrange [0:25]
+
+set terminal png truecolor font small size 600,500
+set output 'triangulation-CI-60-D60.png'
+
+plot 'triangulation-CI-60-D60-PCT10-summary.csv' using 2:xticlabels(1) title "average", \
+	'triangulation-CI-60-D60-PCT10-summary.csv' using 3:xticlabels(1) title "stddev"

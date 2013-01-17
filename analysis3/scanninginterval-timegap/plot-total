@@ -1,0 +1,45 @@
+#set title "Scanning interval and tracking gaps overview" 
+set xlabel "Scanning interval (seconds)" 
+set ylabel "Average maximum tracking gap\n(minutes)"
+
+set grid
+set boxwidth 0.25 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:60]
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'scanninginterval-timegap-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) with boxes title "average"
+
+
+reset
+
+set title "Scanning interval and tracking gaps overview" 
+set xlabel "Scanning interval (seconds)" 
+set ylabel "Tracking gaps (minutes)"
+
+
+set key outside right
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal pngcairo size 500,350 enhanced font 'Verdana,12'
+set output 'scanninginterval-timegap-overview.png'
+
+plot 'triangulation-D30-R15-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 30 Range 15", \
+        'triangulation-D30-R30-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 30 Range 30", \
+        'triangulation-D30-R45-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 30 Range 45", \
+        'triangulation-D60-R15-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 60 Range 15", \
+        'triangulation-D60-R30-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 60 Range 30", \
+        'triangulation-D60-R45-PCT10-summary.csv' using 2:xticlabels(1) title "Delta 60 Range 45"
+
+
+

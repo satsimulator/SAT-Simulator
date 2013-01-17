@@ -1,0 +1,47 @@
+#delme.  added to overcome stuipid subversion bug
+set title "Range and tracking gaps" 
+set xlabel "Range (meters)" 
+set ylabel "Average tracking gap (minutes)"
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:65]
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'range-timegap-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) title "average tracking gap"
+
+
+reset
+
+set title "Range and tracking gaps summary overview" 
+set xlabel "Range (meters)" 
+set ylabel "Average tracking gap (minutes)"
+
+
+set key outside right
+set grid
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal pngcairo size 500,350 enhanced font 'Verdana,12'
+set output 'range-timegap-overview.png'
+
+plot 'triangulation-CI-1-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 D 30", \
+        'triangulation-CI-1-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 D 60", \
+        'triangulation-CI-15-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 D 30", \
+        'triangulation-CI-15-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 D 60", \
+	'triangulation-CI-30-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 D 30", \
+	'triangulation-CI-30-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 D 60", \
+	'triangulation-CI-60-D30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 D 30", \
+	'triangulation-CI-60-D60-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 D 30"
+
+
+

@@ -1,0 +1,10 @@
+changed graphs to be used for thesis
+
+--This line, and those below, will be ignored--
+
+M    range-timegap/range-timegap-total.png
+M    range-timegap/plot-rest
+M    range-timegap/range-timegap-overview.png
+M    range-timegap/plot-total
+M    range-timegap/triangulation-CI-30-D60.png
+M    range-timegap/triangulation-CI-60-D30.png

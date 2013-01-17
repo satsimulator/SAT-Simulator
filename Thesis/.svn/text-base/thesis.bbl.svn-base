@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{UDEL}
+{\em {UDel Models} simulator: http://udelmodels.eecis.udel.edu/}.
+
+\bibitem{80211}
+{\em Ieee standard for information technology - telecommunications and
+  information exchange between systems - local and metropolitan area networks -
+  specific requirements - part 11: Wireless lan medium access control (mac) and
+  physical layer (phy) specifications}, IEEE Std 802.11-2007 (Revision of IEEE
+  Std 802.11-1999),  (2007), pp.~1 --1076.
+
+\bibitem{ALKUWARI}
+{\sc S.~Al-Kuwari and S.~D. Wolthusen}, {\em A survey of forensic localization
+  and tracking mechanisms in short-range and cellular networks}, in Digital
+  Forensics and Cyber Crime, vol.~31 of Lecture Notes of the Institute for
+  Computer Sciences, Social Informatics and Telecommunications Engineering,
+  Springer Berlin Heidelberg, 2010, pp.~19--32.
+
+\bibitem{RADAR}
+{\sc P.~Bahl, V.~N. Padmanabhan, and A.~Balachandran}, {\em Enhancements to the
+  radar user location and tracking system}, Microsoft Research,  (2000).
+
+\bibitem{SAT}
+{\sc E.~Canlar, M.~Conti, B.~Crispo, and R.~Di~Pietro}, {\em Sense-and-trace: A
+  privacy preserving distributed geolocation tracking system}, Security
+  Protocols XX,  (2012), pp.~199--213.
+
+\bibitem{CELLPHONETRACKING}
+{\sc R.~Cayford and T.~Johnson}, {\em Operational parameters affecting the use
+  of anonymous cell phone tracking for generating traffic information}, 1
+  (2003).
+
+\bibitem{CHENG}
+{\sc Y.-C. Cheng, Y.~Chawathe, A.~LaMarca, and J.~Krumm}, {\em Accuracy
+  characterization for metropolitan-scale wi-fi localization}, in Proceedings
+  of the 3rd international conference on Mobile systems, applications, and
+  services, MobiSys '05, New York, NY, USA, 2005, ACM, pp.~233--245.
+
+\bibitem{MAURAUDER}
+{\sc X.~Fu, N.~Zhang, A.~Pingley, W.~Yu, J.~Wang, and W.~Zha}, {\em The digital
+  marauder's map: a wifi forensic positioning tool}, in IEEE Transactions on
+  Mobile Computing, Volume: 11, Issue: 3, IEEE, March 2012, pp.~377--389.
+
+\bibitem{GREENSTEIN}
+{\sc B.~Greenstein, D.~McCoy, J.~Pang, T.~Kohno, S.~Seshan, and D.~Wetherall},
+  {\em Improving wireless privacy with an identifier-free link layer protocol},
+  in Proceedings of the 6th international conference on Mobile systems,
+  applications, and services, MobiSys '08, New York, NY, USA, 2008, ACM,
+  pp.~40--53.
+
+\bibitem{GRUTESER}
+{\sc M.~Gruteser and D.~Grunwald}, {\em Enhancing location privacy in wireless
+  lan through disposable interface identifiers: a quantitative analysis}, Mob.
+  Netw. Appl., 10 (2005), pp.~315--325.
+
+\bibitem{MALNET}
+{\sc N.~Husted and S.~Myers}, {\em Mobile location tracking in metro areas:
+  malnets and others}, in Proceedings of the 17th ACM conference on Computer
+  and communications security, CCS '10, ACM, 2010, pp.~85--96.
+
+\bibitem{WORKINGOVERTIME}
+{\sc A.~Karlson, B.~Meyers, A.~Jacobs, P.~Johns, and S.~Kane}, {\em Working
+  overtime: Patterns of Smartphone and PC Usage in the Day of an Information
+  Worker.}, Springer, 2003, pp.~398--405.
+
+\bibitem{MOTETRACK}
+{\sc K.~Lorincz and M.~Welsh}, {\em Motetrack: a robust, decentralized approach
+  to rf-based location tracking}, Personal Ubiquitous Comput., 11 (2007),
+  pp.~489--503.
+
+\bibitem{APPLAUS}
+{\sc Z.~Zhu and G.~Cao}, {\em {APPLAUS: A Privacy-Preserving Location Proof
+  Updating System for Location-based Services}}, in {Proceedings of the 30th
+  IEEE International Conference on Computer Communications}, IEEE INFOCOM '11,
+  2011.
+
+\end{thebibliography}

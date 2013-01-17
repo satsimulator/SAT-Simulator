@@ -1,0 +1,49 @@
+set xlabel "Delta (seconds)" 
+set ylabel "Tracking gap (minutes)"
+
+set grid
+set boxwidth 0.2 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+set yrange [0:50]
+
+set terminal pdfcairo size 8cm,5.6cm
+set output 'delta-timegap-total.pdf'
+
+plot 'triangulation-total.csv' using 2:xticlabels(1) with boxes title "mean timegap"
+
+
+
+reset
+
+set title "Delta and localization accuracy summary overview" 
+set xlabel "Delta (seconds)" 
+set ylabel "Highest tracking gap (minutes)"
+
+
+set key outside right
+set grid
+set boxwidth 0.2 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0 border lt -1
+set xtics (15,30,45)
+
+set terminal pdfcairo
+set output 'delta-timegap-overview.pdf'
+
+plot 'triangulation-CI-1-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 15", \
+        'triangulation-CI-1-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 30", \
+        'triangulation-CI-1-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 1 R 45", \
+        'triangulation-CI-15-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 15", \
+        'triangulation-CI-15-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 30", \
+        'triangulation-CI-15-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 15 R 45", \
+        'triangulation-CI-30-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 15", \
+        'triangulation-CI-30-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 30", \
+        'triangulation-CI-30-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 30 R 45", \
+        'triangulation-CI-60-R15-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 15", \
+        'triangulation-CI-60-R30-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 30", \
+        'triangulation-CI-60-R45-PCT10-summary.csv' using 2:xticlabels(1) title "CI 60 R 45"
+
